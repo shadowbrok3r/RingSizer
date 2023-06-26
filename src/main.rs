@@ -119,7 +119,7 @@ fn check_non_manifold(vertices: &[wavefront_obj::obj::Vertex]) -> bool {
     // Check for non-manifold conditions
     // Iterate over the faces and check if any vertex is shared by more than two faces
     for i in 0..vertices.len() {
-        let vertex = &vertices[i];
+        let vertex = &vertices[i];/
         let mut face_count = 0;
         for face in vertices.iter() {
             if face.x == vertex.x && face.y == vertex.y && face.z == vertex.z {
